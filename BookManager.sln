@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManager", "BookManager\BookManager.csproj", "{482AB5AE-4846-41C3-B2B7-1D8D8A297B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{C66BAF5F-1408-40E2-BB94-E9D6A2E67A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{58DEAF2A-6E1F-4858-AB45-F9CCEDBBE413}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{482AB5AE-4846-41C3-B2B7-1D8D8A297B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482AB5AE-4846-41C3-B2B7-1D8D8A297B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482AB5AE-4846-41C3-B2B7-1D8D8A297B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482AB5AE-4846-41C3-B2B7-1D8D8A297B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66BAF5F-1408-40E2-BB94-E9D6A2E67A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66BAF5F-1408-40E2-BB94-E9D6A2E67A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66BAF5F-1408-40E2-BB94-E9D6A2E67A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66BAF5F-1408-40E2-BB94-E9D6A2E67A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DEAF2A-6E1F-4858-AB45-F9CCEDBBE413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DEAF2A-6E1F-4858-AB45-F9CCEDBBE413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DEAF2A-6E1F-4858-AB45-F9CCEDBBE413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DEAF2A-6E1F-4858-AB45-F9CCEDBBE413}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
