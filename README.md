@@ -15,7 +15,7 @@ This repository contains a desktop application designed for managing books. The 
 
 ## Screenshots
 
-![Image]()
+![Image](https://github.com/ngckinhluan/book-management-system/blob/main/image/Screenshot%202024-06-29%20110941.png)
 
 ## Getting Started
 
