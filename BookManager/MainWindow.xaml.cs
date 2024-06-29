@@ -84,6 +84,12 @@ public partial class MainWindow : Window
         {
             if (ValidateBookInput())
             {
+                int bookId = int.Parse(BookIdTextBox.Text);
+                if (_book.GetAll().Any(b => b.BookId == bookId))
+                {
+                    MessageBox.Show("Book ID already exists!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
                 Book book = new()
                 {
                     BookId = int.Parse(BookIdTextBox.Text),
@@ -116,7 +122,10 @@ public partial class MainWindow : Window
         {
             if (BookListDataGrid.SelectedItem != null)
             {
-                Book book = _book.GetAll().Find(b => b.BookId == int.Parse(BookIdTextBox.Text));
+                MessageBoxResult result = MessageBox.Show("Are you sure you want to delete this book?", "Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.No) return;
+                int bookId = int.Parse(BookIdTextBox.Text);
+                Book book = _book.GetAll().Find(b => b.BookId == bookId);
                 //var selectedBook = (dynamic)BookListDataGrid.SelectedItem;
                 //int bookId = selectedBook.BookId;
                 //bool deleted = _book.Delete(bookId);
@@ -216,7 +225,8 @@ public partial class MainWindow : Window
             if (BookListDataGrid.SelectedItem != null)
             {
                 if (!ValidateBookInput()) return;
-                Book book = _book.GetAll().Find(b => b.BookId == int.Parse(BookIdTextBox.Text));
+                int bookId = int.Parse(BookIdTextBox.Text);
+                Book book = _book.GetAll().Find(b => b.BookId == bookId);
                 if (book != null)
                 {
                     book.BookName = BookNameTextBox.Text;
